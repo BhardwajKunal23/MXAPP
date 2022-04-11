@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E4D4D"
+    tools:context=".Music">
+
+    <TextView
+        android:id="@+id/titlemusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="MX MUSIC"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/songtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlemusic"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="SONGS:>"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/song1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songtitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="SONG1 :-"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/play1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songtitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/song1"
+        android:onClick="play1"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/pause1"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/play1"
+        android:onClick="pause1"
+        android:text="PAUSE" />
+
+    <Button
+        android:id="@+id/stop1"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songtitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/pause1"
+        android:onClick="stop1"
+        android:text="STOP" />
+
+
+    <TextView
+        android:id="@+id/song2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif"
+        android:text="SONG2 :-"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/play2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_toEndOf="@id/song2"
+        android:onClick="play2"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/pause2"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pause1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/play2"
+        android:onClick="pause2"
+        android:text="PAUSE" />
+
+    <Button
+        android:id="@+id/stop2"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/pause2"
+        android:onClick="stop2"
+        android:text="STOP" />
+
+</RelativeLayout>
